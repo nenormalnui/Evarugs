@@ -1,0 +1,97 @@
+html, body {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+ul{
+    padding-left: 0;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.container {
+    width: 120rem; /*1200px*/
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
+    padding-top: 2.3rem;
+    padding-bottom: 2.6rem;
+    color: #FFFFFF;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__telephone-img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.header__maps-img{
+    width: 1.5rem;
+    height: 2.5rem;
+}
+
+.header__inst-img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.header__telephone-img, .header__maps-img, .header__inst-img{
+    margin-right: 1.5rem;
+}
+
+.header__telephone, .header__maps, .header__inst {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17.2rem 12rem 8.4rem 12rem;
+}
+
+.footer__instagram-img {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.footer__header {
+    margin-bottom: 1rem;
+}
+
+.footer__decor-1 {
+    position: absolute;
+    left: 20%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    width: 11rem;
+    height: 12.5rem;
+}
+
+.footer__decor-2 {
+    position: absolute;
+    left: 77%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    width: 23.3rem;
+    height: 26.4rem;
+}
