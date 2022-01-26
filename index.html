@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Evarugs</title>
@@ -36,16 +42,92 @@
         </div>
       </div>
     </header>
+
+    <main class="main-display__wrap">
+      <div class="container">
+        <div class="main-display__top">
+          <div class="main-display__logo">
+            <div class="main-display__logo-img">
+              <img src="img/header-logo.svg" alt="header logo" />
+            </div>
+            <div class="main-display__title">EVARUGS</div>
+          </div>
+          <ul class="main-display__nav">
+            <li>отзывы</li>
+            <li><a href="#about_section">что это?</a></li>
+            <li><a href="#contacts_section">контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="main-display__center">
+          <div class="main-display__left">
+            <h1 class="main-display__header">
+              Инновационные коврики для автомобиля
+            </h1>
+            <div class="main-display__subheader">
+              в вашем городе
+            </div>
+            <button class="main-display__button" type="button">ЗАКАЗАТЬ</button>
+          </div>
+          <div class="main-display__right">
+            <img src="img/main-img.png" alt="main image">
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="about" id="about_section">
+      <div class="container">
+        <div class="about__wrap">
+          <h2 class="about__header"> Что такое <span>EVA</span> коврики?</h2>
+        </div>
+        <div class="about__items">
+          <div class="about__item">
+            <div class="about__item-img">
+              <img src="img/aboutitem-img1.png" alt="about__item-img-1">
+            </div>
+            <div class="about__item-description">
+              <h3 class="about__item-header">МАТЕРИАЛ</h3>
+              <p class="about__item-text">Коврики EVA всесезонные и отличаются уникальной поверхностью материала с ячейками
+                ромбовидной формы. Из-за чего вода не проливается при изъятии ковра и не плещется при езде. Коврики воду не
+                пропускают.</p>
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__item-img">
+              <img src="img/aboutitem-img2.png" alt="about__item-img-2">
+            </div>
+            <div class="about__item-description">
+              <h3 class="about__item-header">ОТЛИЧИЯ</h3>
+              <p class="about__item-text">Резиновые коврики загибаются и лезут на педали. EVA коврики такого не допустят!
+                Специальные липучки держат его в одном положении. При желании, для водителя устанавливается подпятник из
+                рельефного алюминия.</p>
+            </div>
+          </div>
+          <div class="about__item">
+            <div class="about__item-img">
+              <img src="img/aboutitem-img3.png" alt="about__item-img-3">
+            </div>
+            <div class="about__item-description">
+              <h3 class="about__item-header">РАСЦВЕТКА</h3>
+              <p class="about__item-text">Автомобильные коврики EVA можно заказать и в индивидуальных размерах и в разных
+                цветах, которые комбинируется на выбор покупателя с такими же цветами окантовочной полипропиленовой ременной
+                ленты.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__instagram">
             <h3 class="footer__header">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
             <div class="footer__instagram-img">
-              <img src="img/instagram_icon-new.png" alt="inst icon" />
+              <img src="img/instagram_icon-new.png" alt="inst icon"/>
             </div>
           </div>
-          <div class="footer__telephone">
+          <div class="footer__telephone" id="contacts_section">
             <h3 class="footer__header">КОНТАКТНЫЕ ТЕЛЕФОНЫ</h3>
             <ul>
               <li>+375 29 292-29-29 (VEL)</li>
