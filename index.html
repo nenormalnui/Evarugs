@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Evarugs</title>
   </head>
@@ -31,19 +32,21 @@
             <div class="header__maps-img">
               <img src="img/city.svg" alt="city icon" />
             </div>
-            <span>ваш город</span>
+            <span id="user-city">ваш город</span>
           </div>
           <div class="header__inst">
             <div class="header__inst-img">
               <img src="img/inst-icon.svg" alt="inst icon" />
             </div>
-            <span>посетите нашу страницу</span>
+            <span>посетите нашу <br> страницу</span>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="main-display__wrap">
+    <main>
+      <div class="main-display">
+      <div class="main-display__wrap">
       <div class="container">
         <div class="main-display__top">
           <div class="main-display__logo">
@@ -74,7 +77,8 @@
           </div>
         </div>
       </div>
-    </main>
+      </div>
+      </div>
     <section class="about" id="about_section">
       <div class="container">
         <div class="about__wrap">
@@ -117,7 +121,88 @@
         </div>
       </div>
     </section>
+    </main>
+      <section class="review">
+          <div class="review__slider swiper">
+            <div class="swiper-wrapper review__wrapper">
+              <div class="review__slide swiper-slide">
+                <div class="review__slide-text">
+                    Коврики супер!!! Качество на высшем уровне!!! Удачи и побольше заказов вам!!! Большое
+                    спасибо!
+                </div>
+                <div class="review__slide-name">Константин В.</div>
+                <div class="review__slide-img">
+                    <div class="review__slide-photo">
+                        <img src="img/otz1.png" alt="otz photo">
+                    </div>
+                </div>
+            </div>
+              <div class="review__slide swiper-slide">
+                <div class="review__slide-text">
+                    Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все очень
+                    понравилось. Буду советовать только вас.
+                </div>
+                <div class="review__slide-name">Вера К.</div>
+                <div class="review__slide-img">
+                    <div class="review__slide-photo">
+                        <img src="img/otz2.png" alt="otz photo">
+                    </div>
+                </div>
+            </div>
+            <div class="review__slide swiper-slide">
+                <div class="review__slide-text">
+                    Спасибо, все приехало, поставил. Результатом доволен, в машине супер! Заказывал на
+                    Ниссан.
+                </div>
+                <div class="review__slide-name">Николай П.</div>
+                <div class="review__slide-img">
+                    <div class="review__slide-photo">
+                        <img src="img/otz3.png" alt="otz photo">
+                    </div>
+                </div>
+            </div>
+            <div class="review__slide swiper-slide">
+              <div class="review__slide-text">
+                  Коврики супер!!! Качество на высшем уровне!!! Удачи и побольше заказов вам!!! Большое
+                  спасибо!
+              </div>
+              <div class="review__slide-name">Константин В.</div>
+              <div class="review__slide-img">
+                  <div class="review__slide-photo">
+                      <img src="img/otz1.png" alt="otz photo">
+                  </div>
+              </div>
+          </div>
+            <div class="review__slide swiper-slide">
+                <div class="review__slide-text">
+                    Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все очень
+                    понравилось. Буду советовать только вас.
+                </div>
+                <div class="review__slide-name">Вера К.</div>
+                <div class="review__slide-img">
+                    <div class="review__slide-photo">
+                        <img src="img/otz2.png" alt="otz photo">
+                    </div>
+                </div>
+            </div>
+            <div class="review__slide swiper-slide">
+                <div class="review__slide-text">
+                    Коврики супер!!! Качество на высшем уровне!!! Удачи и побольше заказов вам!!! Большое
+                    спасибо!
+                </div>
+                <div class="review__slide-name">Константин В.</div>
+                <div class="review__slide-img">
+                    <div class="review__slide-photo">
+                        <img src="img/otz3.png" alt="otz photo">
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+      </section>
 
+
+  </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
@@ -151,6 +236,10 @@
           </div>
         </div>
       </div>
+      <script src="scripts/swiper-bundle.js"></script>
+      <script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+      <script src="scripts/main.js"></script>
     </footer>
   </body>
 </html>
