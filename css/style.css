@@ -196,7 +196,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .about__item {
-   /* width: 28%;*/
     box-shadow: 0px 0px 40px rgba(184, 0, 95, 0.2);
     border-radius: .9rem;
     overflow: hidden;
@@ -268,11 +267,7 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-
     clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
-
-    /*width: 11.5rem;
-    height: 13rem;*/
     width: 11rem;
     height: 12rem;
 
@@ -321,7 +316,6 @@ h1,h2,h3,h4,h5,h6 {
     left: 50%;
     transform: translate(-50%, 50%);
 }
-
 
 .footer {
     position: relative;
