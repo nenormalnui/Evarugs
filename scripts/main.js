@@ -1,8 +1,3 @@
-window.onload = function () {
-	jQuery("#user-city").text(ymaps.geolocation.city);
-	jQuery("#user-city2").text(ymaps.geolocation.city);
-}
-
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     loop: true,
