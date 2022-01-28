@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +14,6 @@
   <link rel="stylesheet" href="css/style.css" />
   <title>Evarugs</title>
 </head>
-
 <body>
   <header class="header">
     <div class="container">
@@ -25,8 +23,8 @@
             <img src="img/telephone.svg" alt="telephone icon" />
           </div>
           <div class="header__telephone-text">
-            <span>+375 29 292-29-29 (VEL)</span>
-            <span>+375 33 333-33-33 (МТС)</span>
+            <span><a href="tel:+375 29 292-29-29" class="header__telephone-link">+375 29 292-29-29</a>(VEL)</span>
+            <span><a href="tel:+375 33 333-33-33" class="header__telephone-link">+375 33 333-33-33</a>(МТС)</span>
           </div>
         </div>
         <div class="header__maps">
@@ -44,9 +42,8 @@
       </div>
     </div>
   </header>
-
   <main>
-    <div class="main-display">
+    <section class="main-display">
       <div class="main-display__wrap">
         <div class="container">
           <div class="main-display__top">
@@ -57,12 +54,11 @@
               <div class="main-display__title">EVARUGS</div>
             </div>
             <ul class="main-display__nav">
-              <li>отзывы</li>
+              <li><a href="#feedback_section">отзывы</a></li>
               <li><a href="#about_section">что это?</a></li>
               <li><a href="#contacts_section">контакты</a></li>
             </ul>
           </div>
-
           <div class="main-display__center">
             <div class="main-display__left">
               <h1 class="main-display__header">
@@ -71,7 +67,7 @@
               <div class="main-display__subheader">
                 в вашем городе
               </div>
-              <button class="main-display__button" type="button">ЗАКАЗАТЬ</button>
+              <button type="button" class="main-display__button">ЗАКАЗАТЬ</button>
             </div>
             <div class="main-display__right">
               <img src="img/main-img.png" alt="main image">
@@ -79,7 +75,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <section class="about" id="about_section">
       <div class="container">
         <div class="about__wrap">
@@ -128,7 +124,7 @@
       </div>
     </section>
   </main>
-  <section class="review">
+  <section class="review" id="feedback_section">
     <div class="review__slider swiper">
       <div class="swiper-wrapper review__wrapper">
         <div class="review__slide swiper-slide">
@@ -218,8 +214,6 @@
       </div>
     </div>
   </section>
-
-
   </main>
   <footer class="footer">
     <div class="container">
@@ -233,8 +227,8 @@
         <div class="footer__telephone" id="contacts_section">
           <h3 class="footer__header">КОНТАКТНЫЕ ТЕЛЕФОНЫ</h3>
           <ul>
-            <li>+375 29 292-29-29 (VEL)</li>
-            <li>+375 33 333-33-33 (МТС</li>
+            <li><a href="tel:+375 29 292-29-29" class="footer__telephone-link">+375 29 292-29-29</a>(VEL)</li>
+            <li><a href="tel:+375 33 333-33-33" class="footer__telephone-link">+375 33 333-33-33</a>(МТС)</li>
           </ul>
         </div>
         <div class="footer__adress">
@@ -254,12 +248,39 @@
         </div>
       </div>
     </div>
-    <script src="scripts/swiper-bundle.js"></script>
-    <script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"
-      type="text/javascript"></script>
-    <script src="scripts/main.js"></script>
   </footer>
+  <form action="#" class="modal">
+    <div class="modal__inner">
+      <div class="modal__inner-header">
+        <h2>Форма Заявки</h2>
+      </div>
+      <div class="modal__inner-elements">
+        <div class="modal__item">
+          <div class="modal__input modal__input-short">
+            <input type="text" name="" id="" placeholder="Ваше имя">
+          </div>
+          <div class="modal__input modal__input-short">
+            <input type="email" name="" id="" placeholder="Ваш e-mail">
+          </div>
+        </div>
+        <div class="modal__item">
+          <textarea class="modal__message" name="" id="" cols="30" rows="10"
+            placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"></textarea>
+        </div>
+        <div class="modal__policy">
+          <input id="modal__check" type="checkbox" name="" id="">
+          <label for="modal__check">
+            <span>Я соглашаюсь с</span>
+            <a href="#">Политикой конфиденциальности</a>
+          </label>
+        </div>
+        <button type="button" class="main-display__button modal__buttom">Отправить</button>
+      </div>
+    </div>
+  </form>
+  <script src="scripts/swiper-bundle.js"></script>
+  <script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+  <script src="scripts/main.js"></script>
 </body>
-
 </html>
