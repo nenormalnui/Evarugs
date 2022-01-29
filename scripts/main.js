@@ -58,8 +58,10 @@ document.addEventListener('keyup', (e) => {
 const findMyRegion = () => {
   const status = document.querySelector('.city-title');
   const success = (position) => {
+    console.log(position)
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
+    console.log(latitude + ' ' + longitude)
 
     const GeoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=ru`
 
@@ -71,8 +73,19 @@ const findMyRegion = () => {
   }
 
   const error = () => {
-    status.textContent = 'Не удалось получить местоположение';
-  }
+    let ip = ''; // Текущий IP
+    let  XMLHttp = new XMLHttpRequest();
+
+XMLHttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		let json__info = JSON.parse(this.responseText);
+        status.textContent = json__info.city;
+		;
+	}
+};
+  XMLHttp.open("GET", "http://ipwhois.app/json/?lang=ru" + ip, true);
+  XMLHttp.send();
+}
 
   navigator.geolocation.getCurrentPosition(success, error);
 
