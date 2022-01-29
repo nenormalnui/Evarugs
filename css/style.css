@@ -201,7 +201,7 @@ ul > li {
 /* ------------------ */
 
 .about {
-    background: url(../img/about-fon.svg);
+    background: url('../img/about-back.svg');
     background-position-x: left;
     background-position-y: 20rem;
     background-repeat: no-repeat;
