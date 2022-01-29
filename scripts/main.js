@@ -58,10 +58,8 @@ document.addEventListener('keyup', (e) => {
 const findMyRegion = () => {
   const status = document.querySelector('.city-title');
   const success = (position) => {
-    console.log(position)
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    console.log(latitude + ' ' + longitude)
 
     const GeoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=ru`
 
