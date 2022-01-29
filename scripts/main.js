@@ -1,11 +1,5 @@
 const mainfunc = () => {
 
-window.onload = function () {
-	jQuery("#user-city").text(ymaps.geolocation.city);
-	jQuery("#user-city2").text(ymaps.geolocation.city);
-}
-
-
 const swiper = new Swiper('.swiper', {
   slidesPerView: 3,
   loop: true,
@@ -60,6 +54,36 @@ document.addEventListener('keyup', (e) => {
     body.classList.remove('lock');
   }
 })
+
+const findMyRegion = () => {
+  const status = document.querySelector('.city-title');
+  const success = (position) => {
+    console.log(position)
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    console.log(latitude + ' ' + longitude)
+
+    const GeoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=ru`
+
+    fetch(GeoApiUrl)
+    .then(res => res.json())
+    .then(data => {
+      status.textContent = data.city
+    })
+  }
+
+  const error = () => {
+    status.textContent = 'Не удалось получить местоположение';
+  }
+
+  navigator.geolocation.getCurrentPosition(success, error);
+
+}
+
+window.onload = function () {
+  findMyRegion();
+}
+
 
 }
 
