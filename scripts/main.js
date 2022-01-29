@@ -83,7 +83,7 @@ XMLHttp.onreadystatechange = function() {
 		;
 	}
 };
-  XMLHttp.open("GET", "http://ipwhois.app/json/?lang=ru" + ip, true);
+  XMLHttp.open("GET", "https://ipwhois.app/json/?lang=ru" + ip, true);
   XMLHttp.send();
 }
 
